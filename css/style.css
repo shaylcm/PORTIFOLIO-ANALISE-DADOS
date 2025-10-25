@@ -8,7 +8,7 @@
 
 body {
     background: linear-gradient(135deg, #e0f7fa, #ffffff);
-    background-image: url(/img/fundo.jpg);
+    background-image: url('../img/fundo.jpg');
     background-size: cover;      /* cobre toda a tela */
     background-position: center; /* centraliza a imagem */
     background-repeat: no-repeat; /* evita repetição */
