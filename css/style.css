@@ -8,7 +8,7 @@
 
 body {
     background: linear-gradient(135deg, #e0f7fa, #ffffff);
-    background-image: url('../img/fundo.jpg');
+    background-image: url('../img/background.jpg');
     background-size: cover;      /* cobre toda a tela */
     background-position: center; /* centraliza a imagem */
     background-repeat: no-repeat; /* evita repetição */
@@ -143,8 +143,8 @@ section.visible {
 }
 
 #home img {
-    width: 270px;
-    height: 270px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
