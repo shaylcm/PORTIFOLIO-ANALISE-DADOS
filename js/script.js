@@ -2,20 +2,28 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // ===== Scroll suave para menu =====
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e){
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+
+    // Só aplica rolagem se for um link interno
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
-    });
+      }
+    }
+  });
 });
+
 
 // ===== Destaca menu da seção ativa =====
 const sections = document.querySelectorAll('section');
-
+const navLinks = document.querySelectorAll('nav a');
 
 const menu = document.querySelector('#mobile-menu');
-const navLinks = document.querySelector('.nav-links');
+const navLink = document.querySelector('.nav-links');
 
   menu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
