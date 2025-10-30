@@ -26,7 +26,7 @@ const menu = document.querySelector('#mobile-menu');
 const navLink = document.querySelector('.nav-links');
 
   menu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    navLink.classList.toggle('active');
     menu.classList.toggle('open');
   });
 
