@@ -31,7 +31,7 @@ header {
   align-items: center;
   padding: 15px 40px;
   background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px); /* opcional, dá um toque bonito */
+  backdrop-filter: blur(5px); /*dá um toque bonito */
   z-index: 1000; /* garante que fique acima de tudo */
 
 }
